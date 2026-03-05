@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartViz</title>
+</head>
+<body>
+
+<h2>SmartViz - Data Visualization Tool</h2>
+
+<input type="file" id="fileUpload">
+<button onclick="uploadFile()">Upload Dataset</button>
+
+<br><br>
+
+<select id="columnSelect"></select>
+
+<select id="chartType">
+    <option value="bar">Bar Chart</option>
+    <option value="pie">Pie Chart</option>
+    <option value="line">Line Chart</option>
+</select>
+
+<button onclick="generateChart()">Generate Chart</button>
+
+<br><br>
+
+<canvas id="chartCanvas" width="400" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>
